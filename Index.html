@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Basic Project Gallery</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-color: blue;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0 50px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            line-height: 0.8;
+            padding-top: 50px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        header h1 span {
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            font-size: 25px;
+            line-height: 1;
+        }
+
+        header p {
+            padding-top: 30px;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 10rem;
+            display: block;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+
+        .portfolio {
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .portfolio li {
+            float: left;
+            width: 100%;
+            margin: auto;
+            list-style: none;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+        }
+
+        .portfolio figure {
+            margin: 0 20px 20px 0;
+            position: relative;
+            text-align: center;
+            border: 3px solid #000;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: url("http://www.seanmichael.me/bathtubgin/wp-content/themes/sean-michael-design/images/fancybox_overlay.png") repeat transparent;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .portfolio figure:hover {
+            border: 3px solid #D29990;
+        }
+
+        .portfolio figure:hover img {
+            opacity: .3;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+            -moz-transform: scale(5);
+            -ms-transform: scale(5);
+            -webkit-transform: scale(5);
+            transform: scale(5);
+        }
+
+        .portfolio figure:hover figcaption {
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        .portfolio figure:hover h3 {
+            bottom: 70%;
+        }
+
+        .portfolio figcaption {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            -moz-transition: all 0.2s ease-in-out 0.2s;
+            -o-transition: all 0.2s ease-in-out 0.2s;
+            -webkit-transition: all 0.2s ease-in-out;
+            -webkit-transition-delay: 0.2s;
+            transition: all 0.2s ease-in-out 0.2s;
+        }
+
+        a {
+            background-color: #D29990;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 -1px 1px #cd452f;
+            text-decoration: none;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            display: inline-block;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #e28e80;
+        }
+
+        h3 {
+            color: #fff;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            padding: 1em .7em;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            width: 100%;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            -moz-transition: all 0.15s ease-in-out 0.4s;
+            -o-transition: all 0.15s ease-in-out 0.4s;
+            -webkit-transition: all 0.15s ease-in-out;
+            -webkit-transition-delay: 0.4s;
+            transition: all 0.15s ease-in-out 0.4s;
+        }
+
+        .tabs {
+            margin: 0 0 20px 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .tabs li {
+            list-style: none;
+            float: left;
+            margin: 20px 20px 0 0;
+        }
+
+        [data-filter*="group"] {
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            width: auto;
+            height: auto;
+            padding: 0 1em;
+            border-bottom: 4px solid #c3786c;
+            position: relative;
+            -moz-transition: none;
+            -o-transition: none;
+            -webkit-transition: none;
+            transition: none;
+        }
+
+        [data-filter*="group"]:active {
+            top: 3px;
+            border-bottom: none;
+        }
+
+        [data-filter*="group"].active {
+            background-color: #e28e80;
+        }
+
+        @media (min-width: 460px) {
+            .portfolio li {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 740px) {
+            .portfolio li {
+                width: 33%;
+            }
+        }
+        .lesson {
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Game Advanced <br> <span>[ Game Maker Project Gallery ]</span></h1>
+    </header>
+    <div class="wrap">
+        <ul class="portfolio">
+            <li class="group-0">
+                <figure>
+                    <img src="https://tipsmake.com/data/thumbs/hack-the-dinosaur-game-of-google-chrome-to-make-your-trex-immortal-and-max-speed-thumb-4QovjTqzM.jpg" alt="placeholder" />
+                    <h3>Dinosaur Run</h3>
+                    <figcaption><a class="" href="https://rawcdn.githack.com/mindxDoc/GA/f3230e1684719f948f24a4da4b9179fa78ed50bd/Lesson_1/Sample_code/index.html" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">SAMPLE GAME 1</h2>
+            </li>
+            <li class="group-1">
+                <figure>
+                    <img src="https://cdn.glitch.com/project-avatar/c0dc4743-0e4c-45b2-b609-cca5536b36c6.png?2018-10-30T01:16:33.636Z" alt="placeholder" />
+                    <h3>Duck-Hunt</h3>
+                    <figcaption><a href="" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">SAMPLE GAME 2</h2>
+            </li>
+            <li class="group-1">
+                <figure>
+                    <img src="https://vignette.wikia.nocookie.net/reaper-tale-of-a-pale-swordsman/images/6/6a/Reaper.png/revision/latest?cb=20190213173831" alt="placeholder" />
+                    <h3>Reaper</h3>
+                    <figcaption><a href="https://www.youtube.com/watch?v=OzwfjMBq9UU" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">SAMPLE GAME 3</h2>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
