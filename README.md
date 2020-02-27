@@ -5,7 +5,7 @@
 
 
 ## Cách sử dụng
-* Truy cập đường link: [Gallery](https://rawcdn.githack.com/mindxDoc/GA/9742be14f27b054a9c3b06a1936ccc970937fe2d/Index.html)
+* Truy cập đường link: [Gallery](https://rawcdn.githack.com/mindxDoc/GA/b8d30a306e73833b548bbf401340bc67ff98826c/Lesson_2+3+4/index.html)
 * Chọn một project mẫu để chơi
 
 ## Định hướng phát triển
